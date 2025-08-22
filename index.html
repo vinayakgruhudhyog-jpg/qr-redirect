@@ -4,19 +4,23 @@
   <meta charset="UTF-8">
   <title>QR Redirect</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>
-    // First open the store link
-    window.onload = function() {
-      window.open("https://mayur42.myfoodiv.com
-", "_blank"); // store link
-      setTimeout(function(){
-        window.location.href = "https://mayur42.myfoodiv.com/table/10"; // table link
-      }, 5000); // after 10 seconds
-    };
-  </script>
 </head>
-<body>
-  <h2>Redirecting...</h2>
-  <p>You will first see the store, then be redirected to the table automatically.</p>
+<body style="font-family: Arial, sans-serif; text-align: center; padding: 50px;">
+  <h2>Welcome</h2>
+  <p>Click below to open both links:</p>
+
+  <!-- One button to open both links -->
+  <button 
+    style="padding: 12px 25px; font-size: 18px; cursor: pointer; border-radius: 8px; background: #2d89ef; color: white; border: none;"
+    onclick="openLinks()">
+    Open Store & Table
+  </button>
+
+  <script>
+    function openLinks() {
+      window.open('https://mayur42.myfoodiv.com', '_blank');   // Store link
+      window.open('https://mayur42.myfoodiv.com/table/10', '_blank'); // Table link
+    }
+  </script>
 </body>
 </html>
