@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QR Redirect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    // First open the store link
+    window.onload = function() {
+      window.open("https://mayur42.myfoodiv.com
+", "_blank"); // store link
+      setTimeout(function(){
+        window.location.href = "https://mayur42.myfoodiv.com/table/10"; // table link
+      }, 5000); // after 10 seconds
+    };
+  </script>
+</head>
+<body>
+  <h2>Redirecting...</h2>
+  <p>You will first see the store, then be redirected to the table automatically.</p>
+</body>
+</html>
